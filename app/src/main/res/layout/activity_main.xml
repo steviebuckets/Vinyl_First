@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:paddingBottom="25dp"
-        android:text="Five reasons why you should consider learning to DJ on vinyl first." />
+        android:text="Five reasons why you should consider learning to DJ on vinyl." />
 
 
     <TextView

@@ -8,8 +8,9 @@
     <!-- Style title text in the order form -->
     <style name="TitleTextStyle" >
         <item name="android:textSize">28sp</item>
-        <item name="android:textAllCaps">true</item>
-        <item name="android:textColor">#455A64</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">#212121</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:layout_height">48dp</item>
         <item name="android:layout_width">wrap_content</item>
@@ -20,7 +21,7 @@
     <style name="DescriptionTextStyle" >
         <item name="android:textSize">18sp</item>
         <item name="android:textAllCaps">false</item>
-        <item name="android:textColor">#455A64</item>
+        <item name="android:textColor">#727272</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:layout_height">48dp</item>
         <item name="android:layout_width">wrap_content</item>
@@ -35,6 +36,7 @@
         <item name="android:gravity">center_vertical</item>
         <item name="android:layout_height">48dp</item>
         <item name="android:layout_width">wrap_content</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
 </resources>
