@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        style="@style/TitleTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:gravity="center"
+        android:text="Vinyl First" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:src="@drawable/record" />
+
+    <TextView
+        style="@style/DescriptionTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="25dp"
+        android:text="Five reasons why you should consider learning to DJ on vinyl first." />
+
+
+    <TextView
+        style="@style/TipTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#727272"
+        android:gravity="center"
+        android:text="Respect the DJ's Before You" />
+
+    <TextView
+        style="@style/TipTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#B2DFDB"
+        android:gravity="center"
+        android:text="Learn the basics" />
+
+    <TextView
+        style="@style/TipTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#212121"
+        android:gravity="center"
+        android:text="Learn to scratch" />
+
+    <TextView
+        style="@style/TipTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#009688"
+        android:gravity="center"
+        android:text="Focus on the music" />
+
+    <TextView
+        style="@style/TipTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#03A9F4"
+        android:gravity="center"
+        android:text="Shows your dedication to the craft" />
+
+</LinearLayout>
+
+
+
+
+
