@@ -1,77 +1,113 @@
-<LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".MainActivity">
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
 
-    <TextView
-        style="@style/TitleTextStyle"
-        android:layout_width="match_parent"
+
+<RelativeLayout
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Vinyl First" />
+        android:orientation="vertical">
 
     <ImageView
-        android:layout_width="match_parent"
+        android:id="@+id/minimal"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:src="@drawable/record" />
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/minimal1" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="40dp"
+            android:text="Vinyl First"
+            style="@style/TitleTextStyle"/>
 
     <TextView
-        style="@style/DescriptionTextStyle"
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Five reasons why you should consider learning to DJ on vinyl." />
+        android:gravity="center_horizontal"
+        android:paddingTop="100dp"
+        android:text="5 Reasons to Consider Learning to DJ on Vinyl First"
+        style="@style/DescriptionTextStyle"/>
 
     <TextView
         style="@style/TipTextStyle"
+        android:id="@+id/respect"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="115dp"
+        android:background="#CFD8DC"
+        android:gravity="center"
+        android:layout_below="@id/minimal"
+        android:text="Learn how to Back Cue and Scratch \n Touching Vinyl and manipulating sounds" />
+
+    <TextView
+        style="@style/TipTextStyle"
+        android:id="@+id/basics"
+        android:layout_below="@+id/respect"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="#607D8B"
+        android:gravity="center"
+        android:text="Focus on the Mix \nTrain Your Ears to understand levels, transistions and EQ" />
+
+    <TextView
+        style="@style/TipTextStyle"
+        android:id="@+id/scratch"
+        android:layout_below="@id/basics"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
         android:background="#727272"
         android:gravity="center"
-        android:text="Respect the DJ's Before You" />
+        android:text="Art of the Selector \n Selection matters, choose wisely" />
 
     <TextView
         style="@style/TipTextStyle"
+        android:id="@+id/music"
+        android:layout_below="@id/scratch"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#B2DFDB"
+        android:layout_height="115dp"
+        android:background="#455A64"
         android:gravity="center"
-        android:text="Learn the basics" />
+        android:text="Dedication to the Craft \n Earn the respect from your peers" />
 
     <TextView
         style="@style/TipTextStyle"
+        android:id="@+id/craft"
+        android:layout_below="@id/music"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#212121"
+        android:layout_height="115dp"
+        android:background="#448AFF"
         android:gravity="center"
-        android:text="Learn to scratch" />
+        android:text="Respect the DJ's Before You \n Learn from the ground up" />
 
     <TextView
-        style="@style/TipTextStyle"
+        android:layout_below="@id/craft"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#009688"
-        android:gravity="center"
-        android:text="Focus on the music" />
+        android:layout_height="115dp"
+        android:background="#212121" />
 
-    <TextView
-        style="@style/TipTextStyle"
+
+    <Button
+        android:layout_below="@id/craft"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#03A9F4"
-        android:gravity="center"
-        android:text="Shows your dedication to the craft" />
+        android:layout_height="115dp"
+        android:text="Click Here for More"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:onClick="goToSo"
+        style="?android:attr/borderlessButtonStyle" />
 
-</LinearLayout>
+</RelativeLayout>
+</ScrollView>
+
+
+
 
 
 

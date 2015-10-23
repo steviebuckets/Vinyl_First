@@ -1,9 +1,12 @@
 package com.example.android.vinylfirst;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,6 +15,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
+
+    /**
+     * This method is called when the button is clicked.
+     */
+
+    public void goToSo (View view) {
+        goToUrl("http://djtechtools.com/2015/03/05/why-new-djs-should-start-on-vinyl//");
+    }
+
+    private void goToUrl (String url) {
+        Uri uriUrl = Uri.parse(url);
+        Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
+        startActivity(launchBrowser);
+    }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

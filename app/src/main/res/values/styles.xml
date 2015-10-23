@@ -5,30 +5,18 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <!-- Style title text in the order form -->
-    <style name="TitleTextStyle" >
-        <item name="android:textSize">28sp</item>
-        <item name="android:textAllCaps">false</item>
-        <item name="android:textColor">#212121</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:gravity">center_vertical</item>
-        <item name="android:layout_height">48dp</item>
-        <item name="android:layout_width">wrap_content</item>
-    </style>
-
 
     <!-- Style description text in the order form -->
     <style name="DescriptionTextStyle" >
         <item name="android:textSize">18sp</item>
         <item name="android:textAllCaps">false</item>
-        <item name="android:textColor">#727272</item>
+        <item name="android:textColor">#FFFFFF</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:layout_height">48dp</item>
         <item name="android:layout_width">wrap_content</item>
     </style>
 
 
-    <!-- Style tips text in the order form -->
     <style name="TipTextStyle" >
         <item name="android:textSize">15sp</item>
         <item name="android:textAllCaps">true</item>
@@ -38,5 +26,19 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:textStyle">bold</item>
     </style>
+
+
+
+    <!-- Style title text in the order form -->
+    <style name="TitleTextStyle" >
+        <item name="android:textSize">40sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
 
 </resources>
