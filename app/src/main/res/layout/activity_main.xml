@@ -16,92 +16,130 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:adjustViewBounds="true"
         android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
         android:src="@drawable/minimal1" />
 
         <TextView
+            style="@style/TitleTextStyle"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:paddingTop="40dp"
-            android:text="Vinyl First"
-            style="@style/TitleTextStyle"/>
+            android:text="Vinyl First"/>
 
     <TextView
+        android:id="@+id/description"
+        style="@style/DescriptionTextStyle"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:paddingTop="100dp"
-        android:text="5 Reasons to Consider Learning to DJ on Vinyl First"
-        style="@style/DescriptionTextStyle"/>
+        android:text="5 Reasons to Consider Learning to DJ on Vinyl First"/>
 
     <TextView
+        android:id="@+id/learn"
         style="@style/TipTextStyle"
-        android:id="@+id/respect"
         android:layout_width="match_parent"
         android:layout_height="115dp"
+        android:layout_below="@id/minimal"
         android:background="#CFD8DC"
         android:gravity="center"
-        android:layout_below="@id/minimal"
         android:text="Learn how to Back Cue and Scratch \n Touching Vinyl and manipulating sounds" />
 
-    <TextView
-        style="@style/TipTextStyle"
-        android:id="@+id/basics"
-        android:layout_below="@+id/respect"
+    <Button
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="115dp"
+        android:layout_below="@id/minimal"
+        android:onClick="learnHow" />
+
+
+    <TextView
+        android:id="@+id/focus"
+        style="@style/TipTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_below="@+id/learn"
         android:background="#607D8B"
         android:gravity="center"
         android:text="Focus on the Mix \nTrain Your Ears to understand levels, transistions and EQ" />
 
-    <TextView
-        style="@style/TipTextStyle"
-        android:id="@+id/scratch"
-        android:layout_below="@id/basics"
+    <Button
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="115dp"
+        android:layout_below="@id/learn"
+        android:onClick="focusOn" />
+
+
+    <TextView
+        android:id="@+id/selector"
+        style="@style/TipTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_below="@id/focus"
         android:background="#727272"
         android:gravity="center"
         android:text="Art of the Selector \n Selection matters, choose wisely" />
 
-    <TextView
-        style="@style/TipTextStyle"
-        android:id="@+id/music"
-        android:layout_below="@id/scratch"
+    <Button
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="115dp"
+        android:layout_below="@id/focus"
+        android:onClick="artOf" />
+
+    <TextView
+        android:id="@+id/dedication"
+        style="@style/TipTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_below="@id/selector"
         android:background="#455A64"
         android:gravity="center"
         android:text="Dedication to the Craft \n Earn the respect from your peers" />
 
-    <TextView
-        style="@style/TipTextStyle"
-        android:id="@+id/craft"
-        android:layout_below="@id/music"
+    <Button
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="115dp"
+        android:layout_below="@id/selector"
+        android:onClick="dedicationTo" />
+
+    <TextView
+        android:id="@+id/respect"
+        style="@style/TipTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_below="@id/dedication"
         android:background="#448AFF"
         android:gravity="center"
         android:text="Respect the DJ's Before You \n Learn from the ground up" />
 
-    <TextView
-        android:layout_below="@id/craft"
+    <Button
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="115dp"
+        android:layout_below="@id/dedication"
+        android:onClick="respectThe" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_below="@id/respect"
         android:background="#212121" />
 
 
     <Button
-        android:layout_below="@id/craft"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="115dp"
+        android:layout_below="@id/respect"
+        android:onClick="clickHere"
         android:text="Click Here for More"
-        android:textSize="15sp"
         android:textColor="#FFFFFF"
-        android:onClick="goToSo"
-        style="?android:attr/borderlessButtonStyle" />
+        android:textSize="15sp" />
 
 </RelativeLayout>
 </ScrollView>

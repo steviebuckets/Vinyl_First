@@ -21,8 +21,28 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the button is clicked.
      */
 
-    public void goToSo (View view) {
+    public void clickHere(View view) {
         goToUrl("http://djtechtools.com/2015/03/05/why-new-djs-should-start-on-vinyl//");
+    }
+
+    public void learnHow(View view) {
+        goToUrl("http://www.youtube.com/watch?v=bBsLR3DyFQg//");
+    }
+
+    public void focusOn(View view) {
+        goToUrl("http://www.youtube.com/watch?v=rCrnk-4Jiw4//");
+    }
+
+    public void artOf(View view) {
+        goToUrl("http://www.youtube.com/watch?v=ddm9-tvtw8E//");
+    }
+
+    public void dedicationTo(View view) {
+        goToUrl("http://www.youtube.com/watch?v=oREpUjxUiOs//");
+    }
+
+    public void respectThe(View view) {
+        goToUrl("http://www.youtube.com/watch?v=Kz6RQV3X8sQ//");
     }
 
     private void goToUrl (String url) {
