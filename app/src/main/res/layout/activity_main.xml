@@ -45,6 +45,7 @@
             android:text="Learn how to Back Cue and Scratch \n Touching Vinyl and manipulating sounds" />
 
         <Button
+            android:id="@+id/button1"
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="115dp"
@@ -63,6 +64,7 @@
             android:text="Focus on the Mix \nTrain Your Ears to understand levels, transistions and EQ" />
 
         <Button
+            android:id="@+id/button2"
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="115dp"
@@ -81,6 +83,7 @@
             android:text="Art of the Selector \n Selection matters, choose wisely" />
 
         <Button
+            android:id="@+id/button3"
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="115dp"
@@ -98,6 +101,7 @@
             android:text="Dedication to the Craft \n Earn the respect from your peers" />
 
         <Button
+            android:id="@+id/button4"
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="115dp"
@@ -115,6 +119,7 @@
             android:text="Respect the DJ's Before You \n Learn from the ground up" />
 
         <Button
+            android:id="@+id/button5"
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="115dp"
@@ -129,6 +134,7 @@
 
 
         <Button
+            android:id="@+id/button6"
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="115dp"
@@ -136,17 +142,12 @@
             android:onClick="clickHere"
             android:text="Click Here for More"
             android:textColor="#FFFFFF"
+            android:gravity="center"
             android:textSize="15sp" />
+
 
     </RelativeLayout>
 </ScrollView>
-
-
-
-
-
-
-
 
 
 
