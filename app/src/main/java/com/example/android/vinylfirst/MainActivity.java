@@ -15,6 +15,7 @@ import android.app.AlertDialog;
 import android.app.DialogFragment;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,27 +29,26 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the button is clicked.
      */
 
-    public void alertUser(final java.lang.String url){
+    public void alertUser(final java.lang.String url) {
         new AlertDialog.Builder(this)
                 .setTitle("Leaving App")
-                .setMessage("Are you sure you want to leave?")
-                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener(){
-                    public void onClick(DialogInterface dialog, int which){
+                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
                         goToUrl(url);
                     }
                 })
-                .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener(){
-                    public void onClick(DialogInterface dialog, int which){
-                        /* do nothing */
+                .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                /* do nothing */
                     }
                 })
                 .setIcon(android.R.drawable.ic_dialog_alert)
                 .show();
     }
 
-    public void advancedDialog(java.lang.String url){
+    public void advancedDialog(java.lang.String url) {
         FragmentManager fm = getFragmentManager();
-        MyDialogFragment dialogFragment = new MyDialogFragment ();
+        MyDialogFragment dialogFragment = new MyDialogFragment();
         dialogFragment.setUrl(url);
         dialogFragment.show(fm, "Sample Fragment");
     }
@@ -79,12 +79,11 @@ public class MainActivity extends AppCompatActivity {
         advancedDialog("http://www.youtube.com/watch?v=Kz6RQV3X8sQ//");
     }
 
-    private void goToUrl (String url) {
+    private void goToUrl(String url) {
         Uri uriUrl = Uri.parse(url);
         Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
         startActivity(launchBrowser);
     }
-
 
 
     @Override
@@ -113,34 +112,33 @@ public class MainActivity extends AppCompatActivity {
 
         public String url = "";
 
-        public void setUrl(java.lang.String newUrl){
+        public void setUrl(java.lang.String newUrl) {
             this.url = newUrl;
         }
 
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_sample_dialog, container, false);
+            View.OnClickListener coolListener = (new View.OnClickListener(){
+                public void onClick(View v){
+                    if (v.getId() == R.id.yes){
+                        goToUrl(url);
+                        dismiss();
+                    }
+                   else {
+                        dismiss();
+                }}
+            });
             getDialog().setTitle("Simple Dialog");
-            Button dismiss = (Button) rootView.findViewById(R.id.dismiss);
-            Button okay = (Button) rootView.findViewById(R.id.okay);
-            dismiss.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    dismiss();
-                }
-            });
-            okay.setOnClickListener(new View.OnClickListener() {
-
-                @Override
-                public void onClick(View v) {
-                    goToUrl(url);
-                    dismiss();
-                }
-            });
+            Button no = (Button) rootView.findViewById(R.id.no);
+            Button yes = (Button) rootView.findViewById(R.id.yes);
+            no.setOnClickListener(coolListener);
+            yes.setOnClickListener(coolListener);
             return rootView;
+
         }
+
+
+
     }
-
-
 }
-
