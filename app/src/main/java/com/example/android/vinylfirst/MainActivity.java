@@ -53,6 +53,8 @@ public class MainActivity extends AppCompatActivity {
         dialogFragment.show(fm, "Sample Fragment");
     }
 
+    // urls for youtube links
+
     public void clickHere(View view) {
         advancedDialog("http://djtechtools.com/2015/03/05/why-new-djs-should-start-on-vinyl///");
     }
@@ -115,6 +117,8 @@ public class MainActivity extends AppCompatActivity {
         public void setUrl(java.lang.String newUrl) {
             this.url = newUrl;
         }
+
+        // on click behavior for alert dialog
 
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
